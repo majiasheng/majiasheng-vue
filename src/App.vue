@@ -1,22 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/ma.png">
+    <hd/>
+    <!-- <h1>Jia Sheng Ma</h1> -->
     <navBar/>
-    <contents/>
+
+    <body>
+      Hello World
+    </body>
+    
+
     <foot/>
   </div>
 </template>
 
 <script>
+import hd from './components/head';
 import navBar from './components/navBar';
-import contents from './components/content';
 import foot from './components/footer';
 
 export default {
   name: 'App',
   components: {
+    hd,
     navBar,
-    contents,
     foot
   }
 }
@@ -29,6 +35,19 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 1em;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration-style: none;
+  /* background-color:  */
+}
+a:link, a:visited {
+  color: inherit;
+}
+a:active {
+  color: cornflowerblue;
 }
 </style>
