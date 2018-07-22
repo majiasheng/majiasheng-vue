@@ -1,22 +1,22 @@
 <template>
   <footer>
-    <ul>
-      <!-- <li v-for="ftrContent in ftrContents"> {{ftrContent}} </li> -->
-    </ul>
+      <!-- <li v-for="(item, index) in items" :key=index v-html="item"></li> -->
+    <p>&copy; 2018 majiasheng &emsp; Contact: 
+        <a href="mailto:jiasheng.ma@yahoo.com"><span class="ui-icon ui-icon-mail-open"></span></a>jiasheng.ma@yahoo.com
+    </p>
   </footer>
 </template>
 
 <script>
 export default {
-  name: 'saucer', // calling it saucer because it holds a draining pot 
+  name: 'foot',
 
   data() {
     return {
-      ftrContents: [
-        'footer content 1',
-        'footer content 2',
-        'footer content 3',
-
+      items: [
+        `&copy; ${new Date().getFullYear()} majiasheng`,
+        'Contact: jiasheng@yahoo.com',
+        '<a href=""></a>'
       ]
     }
   }

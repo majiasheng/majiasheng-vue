@@ -1,22 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/ma.png">
     <navBar/>
-
+    <contents/>
+    <foot/>
   </div>
 </template>
 
 <script>
 import navBar from './components/navBar';
-import stuffs from './components/stuffs';
-import saucer from './components/footer';
+import contents from './components/content';
+import foot from './components/footer';
 
 export default {
   name: 'App',
   components: {
     navBar,
-    stuffs,
-    saucer
+    contents,
+    foot
   }
 }
 </script>

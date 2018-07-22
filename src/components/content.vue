@@ -1,12 +1,12 @@
 <template>
   <body>
-
+    <!--TODO: load content based on url -->
   </body>
 </template>
 
 <script>
 export default {
-  name: 'stuffs',
+  name: 'contents',
 
   data() {
     return {
