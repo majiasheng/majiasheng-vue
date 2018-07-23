@@ -17,14 +17,6 @@
             </ul>
         </div>
 
-        <div>
-            <h4>Links</h4>
-            <ul class="prof-links">
-            <li><a href="https://github.com/majiasheng/" target="_blank"><i style="font-size:24px" class="fa">&#xf09b;</i></a></li>
-            <li><a href="#" ><i style="font-size:24px" class="fa">&#xf08c;</i></a></li>
-            </ul>
-        </div>
-
         <h2>Personal Side of Me</h2>
         <div>
 
@@ -35,7 +27,6 @@
         </div>
 
         <div>
-            <hr>
             <h4>Facts</h4>
             <ul class="facts">
               <li v-for="(fact, index) in facts" :key=index> {{fact}} </li>
