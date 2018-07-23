@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <hd/>
-    <!-- <h1>Jia Sheng Ma</h1> -->
-    <navBar/>
-
     <body>
-      Hello World
+      <div id="wrapper">
+      <hd/>
+      <!-- <h1>Jia Sheng Ma</h1> -->
+      <navBar/>
+      Hello World, my name is <h1 style="display: inline">Jia Sheng Ma</h1>
+      </div>
     </body>
-    
 
     <foot/>
   </div>
@@ -28,26 +28,4 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 1em;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration-style: none;
-  /* background-color:  */
-}
-a:link, a:visited {
-  color: inherit;
-}
-a:active {
-  color: cornflowerblue;
-}
-</style>
+<style src="./assets/app.css"></style>

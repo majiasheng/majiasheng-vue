@@ -1,8 +1,51 @@
 <template>
-  <div id="">
-      <hd>
-      <navBar/>
-      <foot/>
+  <div id="app">
+    <body>
+      <div id="wrapper">
+        <hd/>
+        <navBar/>
+        <span>Full Stack Software Developer</span>
+        <p>
+          Graduated in May 2018 from Stony Brook University with a B.S. in Computer Science (Cum Laude). <br>
+        </p>
+        
+        <a class="hire-me" href="https://docs.google.com/document/d/1tCIPE5Rk1F90bj1pWMbSZTzjt1gfVFJQetvSwQtdEmA/edit?usp=sharing"><strong>Currently seeking full time opportunities for Fall 2018 and onwards.</strong><span class="ui-icon ui-icon-document"></span></a><br>
+        <div>
+            <h4>Career Interest</h4>
+            <ul class="career-interest">
+              <li v-for="(careerInterest, index) in careerInterests" :key=index> {{careerInterest}} </li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Links</h4>
+            <ul class="prof-links">
+            <li><a href="https://github.com/majiasheng/" target="_blank"><i style="font-size:24px" class="fa">&#xf09b;</i></a></li>
+            <li><a href="#" ><i style="font-size:24px" class="fa">&#xf08c;</i></a></li>
+            </ul>
+        </div>
+
+        <h2>Personal Side of Me</h2>
+        <div>
+
+            <h4>Interests</h4>
+            <ul class="interest"> 
+              <li v-for="(interest, index) in interests" :key=index> {{interest}} </li>
+            </ul>
+        </div>
+
+        <div>
+            <hr>
+            <h4>Facts</h4>
+            <ul class="facts">
+              <li v-for="(fact, index) in facts" :key=index> {{fact}} </li>
+
+            </ul>
+        </div>
+      </div>
+    </body>
+
+    <foot/>
   </div>
 </template>
 <script>
@@ -11,7 +54,7 @@ import navBar from './components/navBar';
 import foot from './components/footer';
 
 export default {
-  name: projects,
+  name: 'about',
   components: {
     hd,
     navBar,
@@ -22,8 +65,11 @@ export default {
       contact: {
         email: 'jiasheng.ma@yahoo.com',
       },
-      careerInterests: ['career interests'],
-      interest:[
+      careerInterests: ['Healthcare IT',
+                        'Solving existing environmental problems that affects everyday life, such as climate change',
+                        "Building practical software that can improve general populations\' living experience.",
+                        'Other efforts that benefit the longevity and development of our society.'] ,
+      interests:[
         'Workout (calisthenics, weight training)',
         'Care for plants'
       ],
@@ -41,3 +87,4 @@ export default {
   }
 }
 </script>
+<style src="./assets/app.css"></style>

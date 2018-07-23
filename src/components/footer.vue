@@ -14,8 +14,8 @@ export default {
 </script>
 <style>
 footer {
-  position: fixed;
-  bottom: 0px; 
+  /* position: fixed; */
+  /* bottom: 0px;  */
   padding-left: 1em;
   padding-top: 1em;
   padding-bottom: 0.5em;
