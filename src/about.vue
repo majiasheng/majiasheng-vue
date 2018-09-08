@@ -4,34 +4,37 @@
       <div id="wrapper">
         <hd/>
         <navBar/>
-        <span>Full Stack Software Developer</span>
-        <p>
-          Graduated in May 2018 from Stony Brook University with a B.S. in Computer Science (Cum Laude). <br>
-        </p>
-        
-        <a class="hire-me" href="https://docs.google.com/document/d/1tCIPE5Rk1F90bj1pWMbSZTzjt1gfVFJQetvSwQtdEmA/edit?usp=sharing"><strong>Currently seeking full time opportunities for Fall 2018 and onwards.</strong><span class="ui-icon ui-icon-document"></span></a><br>
-        <div>
-            <h4>Career Interest</h4>
-            <ul class="career-interest">
-              <li v-for="(careerInterest, index) in careerInterests" :key=index> {{careerInterest}} </li>
-            </ul>
-        </div>
+        <button @click="summarize">Give me a summary already</button>
+        <div class="about">
+          <span>Full Stack Software Developer</span>
+          <p>
+            B.S. in Computer Science / Cum Laude (Stony Brook University Class of 2018)<br>
+          </p>
+          <!-- <p>
+          </p> -->
 
-        <h2>Personal Side of Me</h2>
-        <div>
+          <a id="hire-me" href="https://docs.google.com/document/d/1tCIPE5Rk1F90bj1pWMbSZTzjt1gfVFJQetvSwQtdEmA/edit?usp=sharing">∎ Seeking full time opportunities for fall 2018 and onwards.<span class="ui-icon ui-icon-document"></span></a><br>
+          <div>
+              <h2>Career Interest</h2>
+              <ul class="career-interest">
+                <li v-for="(careerInterest, index) in careerInterests" :key=index> {{careerInterest}} </li>
+              </ul>
+          </div>
 
-            <h4>Interests</h4>
-            <ul class="interest"> 
-              <li v-for="(interest, index) in interests" :key=index> {{interest}} </li>
-            </ul>
-        </div>
+          <div>
+              <h2>Interests</h2>
+              <ul class="interest"> 
+                <li v-for="(interest, index) in interests" :key=index v-html="interest"></li>
+              </ul>
+          </div>
 
-        <div>
-            <h4>Facts</h4>
-            <ul class="facts">
-              <li v-for="(fact, index) in facts" :key=index> {{fact}} </li>
+          <div>
+              <h2>Facts</h2>
+              <ul class="facts">
+                <li v-for="(fact, index) in facts" :key=index> {{fact}} </li>
 
-            </ul>
+              </ul>
+          </div>
         </div>
       </div>
     </body>
@@ -51,27 +54,42 @@ export default {
     navBar,
     foot
   },
+  methods: {
+    summarize() {
+      //TODO: show summary instead of about
+      alert('hi');
+    }
+  },
   data() {
     return {
+      summaries: [
+        'Fitness enthusiast',
+        'Software developer',
+        'Knowledge lover',
+        'Plant lover',
+        'Art lover',
+      ],
       contact: {
         email: 'jiasheng.ma@yahoo.com',
       },
       careerInterests: ['Healthcare IT',
-                        'Solving existing environmental problems that affects everyday life, such as climate change',
-                        "Building practical software that can improve general populations\' living experience.",
-                        'Other efforts that benefit the longevity and development of our society.'] ,
+                        'Help solve existing environmental problems that affects everyday life through software.',
+                        "Build practical software that can improve general populations\' living experience.",
+                        'Other efforts that benefit the longevity and development of our society.'
+                      ],
       interests:[
-        'Workout (calisthenics, weight training)',
+        'Workout (calisthenics, weight training) <button id="notice" title="Unofficial squat record holder for weight class of 130lb at SBU Rec Center: 300lb (As of May 2018)">!</button>',
         'Care for plants'
       ],
       facts: [
+        'Optimistic.',
+        'Like plants.',
+        'Like to organize.',
+        'Like to help people.',
+        'Like things to be succinct.',
         'Enjoyed making this website.',
         'Enjoy gaining new knowledge.',
-        'Like things to be succinct.',
-        'Like to organize.',
-        'Like plants.',
-        'Like to help people.',
-        'Appreciate art, design, knowledge, good jokes, good actions.',
+        'Appreciate art, design, knowledge, humor, and many more.',
         'Have a genuine excited feeling about planning/designing and writing new software.',
       ]
     }
@@ -79,3 +97,4 @@ export default {
 }
 </script>
 <style src="./assets/app.css"></style>
+<style src="./assets/about.css"></style>

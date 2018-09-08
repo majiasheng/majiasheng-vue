@@ -1,11 +1,11 @@
 <template>  
-  <div>
+  <div class="nav-bar">
     <ul class="horizontal">
       <!-- <li><img alt="馬" src="../assets/ma.png"></li> -->
       <!-- <navItem v-for="(item, index) in navItems" :key=index a.href=item.url> {{ item.name }} </navItem> -->
       <li v-for="(item, index) in navItems" :key=index><a :href=item.url class="nav-item"> {{item.name}} </a></li>
     </ul>
-  </div>  
+  </div>
     
 </template>
 

@@ -5,7 +5,8 @@
       <hd/>
       <!-- <h1>Jia Sheng Ma</h1> -->
       <navBar/>
-      Hello World, my name is <h1 style="display: inline">Jia Sheng Ma</h1>
+      <h1>Hello World!</h1>
+      <!-- <h1 style="display: inline">Jia Sheng Ma</h1> -->
       </div>
     </body>
 
