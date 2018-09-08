@@ -1,51 +1,43 @@
 <template>
-  <div id="app">
-    <body>
-      <div id="wrapper">
-        <hd/>
-        <navBar/>
-        <button @click="summarize">Give me a summary already</button>
-        <div class="about">
-          <span>Full Stack Software Developer</span>
-          <p>
-            B.S. in Computer Science / Cum Laude (Stony Brook University Class of 2018)<br>
-          </p>
-          <!-- <p>
-          </p> -->
+  <div id="about">
+    <button @click="summarize">Give me a summary already</button>
+    <div class="about">
+      <span>Full Stack Software Developer</span>
+      <p>
+        B.S. in Computer Science / Cum Laude (Stony Brook University Class of 2018)<br>
+      </p>
+      <!-- <p>
+      </p> -->
 
-          <a id="hire-me" href="https://docs.google.com/document/d/1tCIPE5Rk1F90bj1pWMbSZTzjt1gfVFJQetvSwQtdEmA/edit?usp=sharing">∎ Seeking full time opportunities for fall 2018 and onwards.<span class="ui-icon ui-icon-document"></span></a><br>
-          <div>
-              <h2>Career Interest</h2>
-              <ul class="career-interest">
-                <li v-for="(careerInterest, index) in careerInterests" :key=index> {{careerInterest}} </li>
-              </ul>
-          </div>
-
-          <div>
-              <h2>Interests</h2>
-              <ul class="interest"> 
-                <li v-for="(interest, index) in interests" :key=index v-html="interest"></li>
-              </ul>
-          </div>
-
-          <div>
-              <h2>Facts</h2>
-              <ul class="facts">
-                <li v-for="(fact, index) in facts" :key=index> {{fact}} </li>
-
-              </ul>
-          </div>
-        </div>
+      <a id="hire-me" href="https://docs.google.com/document/d/1tCIPE5Rk1F90bj1pWMbSZTzjt1gfVFJQetvSwQtdEmA/edit?usp=sharing">∎ Seeking full time opportunities for fall 2018 and onwards.<span class="ui-icon ui-icon-document"></span></a><br>
+      <div>
+          <h2>Career Interest</h2>
+          <ul class="career-interest">
+            <li v-for="(careerInterest, index) in careerInterests" :key=index> {{careerInterest}} </li>
+          </ul>
       </div>
-    </body>
 
-    <foot/>
+      <div>
+          <h2>Interests</h2>
+          <ul class="interest"> 
+            <li v-for="(interest, index) in interests" :key=index v-html="interest"></li>
+          </ul>
+      </div>
+
+      <div>
+          <h2>Facts</h2>
+          <ul class="facts">
+            <li v-for="(fact, index) in facts" :key=index> {{fact}} </li>
+
+          </ul>
+      </div>
+    </div>
   </div>
 </template>
 <script>
-import hd from './components/head';
-import navBar from './components/navBar';
-import foot from './components/footer';
+import hd from './head';
+import navBar from './navBar';
+import foot from './footer';
 
 export default {
   name: 'about',
@@ -96,5 +88,5 @@ export default {
   }
 }
 </script>
-<style src="./assets/app.css"></style>
-<style src="./assets/about.css"></style>
+<style src="../assets/app.css"></style>
+<style src="../assets/about.css"></style>

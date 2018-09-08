@@ -5,8 +5,7 @@
       <hd/>
       <!-- <h1>Jia Sheng Ma</h1> -->
       <navBar/>
-      <h1>Hello World!</h1>
-      <!-- <h1 style="display: inline">Jia Sheng Ma</h1> -->
+      <router-view></router-view>
       </div>
     </body>
 
