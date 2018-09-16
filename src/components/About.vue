@@ -1,7 +1,8 @@
 <template>
   <div id="about">
-    <button @click="summarize">Give me a summary already</button>
-    <div class="about">
+    <button @click="toggleSummarize">{{ btnText }}</button>
+    <div class="summary" :hidden="doNotWantSummary"></div>
+    <div class="about" :hidden="!doNotWantSummary">
       <span>Full Stack Software Developer</span>
       <p>
         B.S. in Computer Science / Cum Laude (Stony Brook University Class of 2018)<br>
@@ -47,13 +48,17 @@ export default {
     foot
   },
   methods: {
-    summarize() {
-      //TODO: show summary instead of about
-      alert('hi');
+    toggleSummarize() {
+      this.doNotWantSummary=!this.doNotWantSummary;
+      this.btnText = this.doNotWantSummary?this.btnText_full:this.btnText_summary;
     }
   },
   data() {
     return {
+      btnText_summary: 'Give me a summary already',
+      btnText_full: 'I want to see more',
+      btnText: 'Give me a summary already',
+      doNotWantSummary: true,
       summaries: [
         'Fitness enthusiast',
         'Software developer',

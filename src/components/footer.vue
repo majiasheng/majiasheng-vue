@@ -8,7 +8,7 @@
       &emsp; 
       <span><a href="https://github.com/majiasheng">Github</a></span>
       &emsp;
-      <span><a href="https://www.linkedin.com/in/majiasheng/">Linkedin</a></span>
+      <span><a href="https://www.linkedin.com/in/majiasheng/">LinkedIn</a></span>
     </p>
   </footer>
 </template>

@@ -2,9 +2,9 @@
   <div class="nav-bar">
     <ul class="horizontal">
       <!-- <li><img alt="馬" src="../assets/ma.png"></li> -->
-      <!-- <navItem v-for="(item, index) in navItems" :key=index a.href=item.url> {{ item.name }} </navItem> -->
-      <router-link v-for="(item, index) in navItems" :key=index :to=item.url><a class="nav-item"> {{item.name}} </a></router-link>
-      <li v-for="(item, index) in links" :key=index><a :href=item.url class="nav-item"> {{item.name}} </a></li>
+      <navItem v-for="(item, index) in navItems" :key="index" :url="item.url"> {{ item.name }} </navItem>
+      <!-- <router-link v-for="(item, index) in navItems" :key="index" :to="item.url"><a class="nav-item"> {{item.name}} </a></router-link> -->
+      <li v-for="(item, index) in links" :key="index"><a :href="item.url" class="nav-item"> {{item.name}} </a></li>
     </ul>
   </div>
     
@@ -16,6 +16,9 @@ export default {
   name: 'navBar',
   components: {
     navItem
+  },
+  props: {
+    url:'',
   },
   data() {
     return {
