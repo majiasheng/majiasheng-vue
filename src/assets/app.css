@@ -36,3 +36,9 @@ body {
 /* .horizontal {
   display: inline;
 } */
+
+ul.horizontal li {  
+  display: inline;
+  margin-left: 1em;
+  margin-right: 1em;
+}

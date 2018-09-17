@@ -1,6 +1,7 @@
 <template>
   <div id="home">
-    Hello World!
+    <p>Hello World! </p>
+    <p>My name is Jia Sheng.</p>
   </div>
 </template>
 

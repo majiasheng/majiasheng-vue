@@ -1,7 +1,12 @@
 <template>
   <div id="about">
     <button @click="toggleSummarize">{{ btnText }}</button>
-    <div class="summary" :hidden="doNotWantSummary"></div>
+    <div class="summary" :hidden="doNotWantSummary">
+      <ul>
+        <about-summary v-for="(s, index) in summaries" :key="index" > {{ s }} </about-summary>
+      </ul>
+    </div>
+    
     <div class="about" :hidden="!doNotWantSummary">
       <span>Full Stack Software Developer</span>
       <p>
@@ -39,13 +44,15 @@
 import hd from './head';
 import navBar from './navBar';
 import foot from './footer';
+import summary from './Summary';
 
 export default {
   name: 'about',
   components: {
     hd,
     navBar,
-    foot
+    foot,
+    'about-summary': summary,
   },
   methods: {
     toggleSummarize() {
