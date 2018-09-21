@@ -1,5 +1,6 @@
 <template>
   <div id="about">
+    <h1 class="name">Ma, Jia Sheng</h1>
     <button @click="toggleSummarize">{{ btnText }}</button>
     <div class="summary" :hidden="doNotWantSummary">
       <ul>
@@ -41,17 +42,14 @@
   </div>
 </template>
 <script>
-import hd from './head';
-import navBar from './navBar';
-import foot from './footer';
+
+// import navBar from './navBar';
+// import foot from './footer';
 import summary from './Summary';
 
 export default {
   name: 'about',
   components: {
-    hd,
-    navBar,
-    foot,
     'about-summary': summary,
   },
   methods: {
@@ -63,9 +61,9 @@ export default {
   data() {
     return {
       btnText_summary: 'Give me a summary already',
-      btnText_full: 'I want to see more',
-      btnText: 'Give me a summary already',
-      doNotWantSummary: true,
+      btnText_full: 'Tell me more',
+      btnText: 'Tell me more',
+      doNotWantSummary: false,
       summaries: [
         'Fitness enthusiast',
         'Software developer',
@@ -100,5 +98,4 @@ export default {
   }
 }
 </script>
-<style src="../assets/app.css"></style>
-<style src="../assets/about.css"></style>
+<style src="../assets/about.css" scoped></style>

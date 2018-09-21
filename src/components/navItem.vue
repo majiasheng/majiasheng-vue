@@ -1,10 +1,9 @@
 <template>
-  <!-- <li><a :href="url" class="nav-item"><slot></slot></a></li> -->
   <li><a><router-link :to="url" class="nav-item"><slot></slot></router-link></a></li>
 </template>
 <script>
 export default {
-  name: 'navItem',
+  name: 'nav-item',
   props: {
     url:'',
   }
@@ -18,8 +17,8 @@ a:hover {
 
 .nav-item {
   border-radius: 0.1em;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
+  /* padding-left: 0.2em;
+  padding-right: 0.2em; */
 }
 
 </style>

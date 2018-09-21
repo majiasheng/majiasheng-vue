@@ -1,21 +1,19 @@
 <template>  
   <div class="nav-bar">
-    <ul class="horizontal">
-      <!-- <li><img alt="馬" src="../assets/ma.png"></li> -->
-      <navItem v-for="(item, index) in navItems" :key="index" :url="item.url"> {{ item.name }} </navItem>
-      <!-- <router-link v-for="(item, index) in navItems" :key="index" :to="item.url"><a class="nav-item"> {{item.name}} </a></router-link> -->
-      <li v-for="(item, index) in links" :key="index"><a :href="item.url" class="nav-item"> {{item.name}} </a></li>
+    <!-- <span id="logo"><a href="/"><img src="../../static/logo.png"></a></span> -->
+    <ul class="horizontal nav-items">
+      <!-- <li id="logo"><a href="/">馬</a></li> -->
+      <nav-item v-for="(item, index) in navItems" :key="index" :url="item.url"> {{ item.name }} </nav-item>
     </ul>
   </div>
-    
 </template>
 
 <script>
-import navItem from './navItem';
+import NavItem from './NavItem';
 export default {
-  name: 'navBar',
+  name: 'nav-bar',
   components: {
-    navItem
+    'nav-item': NavItem
   },
   props: {
     url:'',
@@ -23,11 +21,10 @@ export default {
   data() {
     return {
       navItems: [
-        {name: 'About Me', url:'/about'},
+        {name: 'About', url:'/about'},
         {name: 'Projects', url:'/projects'},
-        // {name: 'Résumé', url:'/resume'},
+        {name: 'Résumé', url:'/resume'},
       ],
-      links:[ {name: 'Résumé', url:'https://docs.google.com/document/d/1tCIPE5Rk1F90bj1pWMbSZTzjt1gfVFJQetvSwQtdEmA/edit?usp=sharing'},]
     }
   }
 }

@@ -18,13 +18,9 @@ export default {
   name: 'foot',
 }
 </script>
-<style>
+<style scoped>
 footer {
-  /* position: fixed; */
-  /* bottom: 0px;  */
-  padding-left: 1em;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+  margin-left: 1em;
   border-color: rgb(231, 231, 231);
   width: 100%;
 }

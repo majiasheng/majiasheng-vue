@@ -27,5 +27,4 @@ export default {
   }
 }
 </script>
-<style src="../assets/app.css"></style>
 <style src="../assets/projects.css" scoped></style>

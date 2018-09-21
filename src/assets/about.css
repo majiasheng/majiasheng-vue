@@ -1,44 +1,29 @@
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 1em;
-}
-.about {
-  text-align: left;
-  margin-left: 10em;
-  margin-right: 10em;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration-style: none;
-  /* background-color:  */
-}
-a:link, a:visited {
-  color: inherit;
-}
-a:active {
-  color: cornflowerblue;
-}
-
-ul {
-  list-style-type: none;
-}
-
-body {
-  display: flex;
-  min-height: 85vh;
-  flex-direction: column;
+.name {
+  font-size: 6em;
+  width: 100vw;
   text-align: center;
 }
-#wrapper {
-  flex: 1;
+.about {
+  /* text-align: left; */
+  /* margin-left: 10em;
+  margin-right: 10em; */
 }
 
 #hire-me {
   background: #2c3e50;
   color:white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  /* font-size: 30px; */
+  text-align: left;
 }

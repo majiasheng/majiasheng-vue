@@ -3,24 +3,19 @@ import Router from 'vue-router';
 import Home from "@/components/Home";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
+import Blank from '@/components/BlankPage';
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
+  hash: false,
   routes:[
-    {
-      path: '/',
-      name: 'Home',
-      component: Home
+    { path: '/', component: Home },
+    { path: '/about', component: About },
+    { path: '/projects', component: Projects },
+    { path: '/resume',
+      beforeEnter() {location.href = 'https://docs.google.com/document/d/1tCIPE5Rk1F90bj1pWMbSZTzjt1gfVFJQetvSwQtdEmA/edit?usp=sharing'}
     },
-    {
-      path: '/about',
-      name: 'About',
-      component: About
-    },
-    {
-      path: '/projects',
-      name: 'Projects',
-      component: Projects
-    },
+    { path: '/blank', component: Blank },
   ]
 });
