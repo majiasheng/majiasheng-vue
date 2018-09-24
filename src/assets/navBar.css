@@ -6,38 +6,10 @@ ul.horizontal * {
 ul.horizontal li {  
   display: inline;
   margin-left: 1em;
-  margin-right: 1em;
-  /* width: max-content; */
 }
-
-a:hover {
-  background: #36465D;
-  color: white;
-}
-
-/* #logo {
-  font-size: 2em;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-#logo>a:hover {
-  background: red;
-} */
-
-/* .nav-item {
-  border-radius: 0.1em;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-} */
 
 .nav-bar {
-  /* position: relative;
-  left: 1em;
-  z-index: 100; */
   float: right;
-  background: white;
-}
-.nav-items {
   position: sticky;
   top: 1em;
   z-index: 100;

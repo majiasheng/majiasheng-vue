@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration-style: none;
+}
+a:link, a:visited {
+  color: inherit;
+}
+a:active {
+  color: cornflowerblue;
+}

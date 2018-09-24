@@ -1,6 +1,5 @@
 <template>
-  <div id="home">
-    <!-- <h1>></h1> -->
+  <div class="home">
     <div class="typewriter">
       <h1 id="hello-world">> Hello World! </h1>
     </div>
@@ -9,7 +8,7 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: 'home-page',
 }
 </script>
 <style scoped>
