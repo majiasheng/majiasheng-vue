@@ -26,25 +26,12 @@ body {
   min-height: 85vh;
   flex-direction: column;
 }
-
 #wrapper {
   flex: 1;
 }
 .horizontal {
   display: inline;
 }
-
-/* .grid-container {
-  display: inline-grid;
-  grid-template-columns: 1fr auto 1fr;
-} */
-/* 
-.placeholder {
-  width: 33%;
-  width: calc(100% / 3);
-  display: inline-block;
-} */
-
 .content-container {
   width: inherit;
   display: flex;

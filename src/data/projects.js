@@ -2,9 +2,10 @@ export const projects = [
   {
     name: 'The Root Project', 
     id:'trp', 
-    desc: '', 
+    desc: "A effort to collect learning topics and present them in a hierachical order (top-down) to give learners an overview of topics.<br/>I like to compare my way of learning a large topic to solving a jigsaw puzzle 
+    + "<table><td>First, I will skim through the </td></table>",
     link: '', 
-    techStack: []
+    techStack: []       
   },
   {
     name: 'Twitter Clone', 

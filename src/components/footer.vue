@@ -31,6 +31,7 @@ footer {
   align-items: center;
   
   margin-top: 3em;
+  margin-bottom: 3em;
   /* width: 100%; */
 }
 ul li {

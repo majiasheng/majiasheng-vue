@@ -2,17 +2,17 @@
   <div id="app">
     <body>
       <div id="wrapper">
-          <nav-bar></nav-bar>
-          <div class="content-container">
-            <div class="placeholder"></div>
-            <div class="content-wrapper">
-              <router-view></router-view>
-            </div>
-            <div class="placeholder"></div>
+        <nav-bar></nav-bar>
+        <div class="content-container">
+          <div class="placeholder"></div>
+          <div class="content-wrapper">
+            <router-view></router-view>
           </div>
+          <div class="placeholder"></div>
+        </div>
+        <foot></foot>
       </div>
     </body>
-    <foot/>
   </div>
 </template>
 
