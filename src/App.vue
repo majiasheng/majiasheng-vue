@@ -10,8 +10,8 @@
           </div>
           <div class="placeholder"></div>
         </div>
-        <foot></foot>
       </div>
+      <!-- <foot></foot> -->
     </body>
   </div>
 </template>

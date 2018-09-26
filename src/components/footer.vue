@@ -26,13 +26,11 @@ export default {
 </script>
 <style scoped>
 footer {
-  display: flex;
+  position: absolute;
+  bottom: 1em;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  
-  margin-top: 3em;
-  margin-bottom: 3em;
-  /* width: 100%; */
+  align-items: center; */
 }
 ul li {
   display: inline;

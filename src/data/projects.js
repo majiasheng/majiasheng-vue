@@ -1,55 +1,45 @@
-export const projects = [
-  {
-    name: 'The Root Project', 
-    id:'trp', 
-    desc: "A effort to collect learning topics and present them in a hierachical order (top-down) to give learners an overview of topics.<br/>I like to compare my way of learning a large topic to solving a jigsaw puzzle 
-    + "<table><td>First, I will skim through the </td></table>",
-    link: '', 
-    techStack: []       
-  },
-  {
-    name: 'Twitter Clone', 
-    id: 'twtr', 
-    desc:  '', 
-    link: '', 
-    techStack:  ['Nginx', 'NodeJs', 'MongoDB', 'Cassandra', 'RabbitMQ']
-  },
-  {
-    name: 'Reverse Gerrymandering', 
-    id: 'rgm', 
-    desc: '', 
-    link: '', 
-    techStack: ['Java', 'SpringMVC', 'MySQL', 'JPA']
-  },
-  {
-    name: 'Bash Shell', 
-    id:'shell', 
-    desc: '', 
-    link: '', 
-    techStack: ['C']
-  },
-  {
-    name: 'Lawn Mower', 
-    id:'lmw', 
-    desc: 'This is the project that marked the transition of me being a programmer that writes "Hello World" programs only to ****. It also made me realized the usefulness of using a debugger.', 
-    link: '', 
-    techStack: ['MIPS Assembly']
-  },
-  {
-    name: 'Facebook Clone', 
-    id:'fb', 
-    desc: '', 
-    link: '', 
-    techStack: ['PHP', 'MySQL']
-  },
-  {
-    name: 'Interest Groups', 
-    id:'ig', 
-    desc: '', 
-    link: '', 
-    techStack: ['Java']
-  },
-];
+export const trp = {
+  name: 'The Root Project', 
+  id:'trp', 
+  link: '', 
+  techStack: ['NodeJs', 'MySQL']
+};
+export const twtr = {
+  name: 'Twitter Clone', 
+  id: 'twtr', 
+  link: '', 
+  techStack:  ['Nginx', 'NodeJs', 'MongoDB', 'Cassandra', 'RabbitMQ']
+};
+export const rgm = {
+  name: 'Reverse Gerrymandering', 
+  id: 'rgm', 
+  link: '', 
+  techStack: ['Java', 'SpringMVC', 'MySQL', 'JPA']
+};
+export const shell = {
+  name: 'Bash Shell', 
+  id:'shell', 
+  link: '', 
+  techStack: ['C']
+};
+export const lmw = {
+  name: 'Lawn Mower', 
+  id:'lmw', 
+  link: '', 
+  techStack: ['MIPS Assembly']
+};
+export const fb = {
+  name: 'Facebook Clone', 
+  id:'fb', 
+  link: '', 
+  techStack: ['PHP', 'MySQL']
+};
+export const itrg = {
+  name: 'Interest Groups', 
+  id:'itrg', 
+  link: '', 
+  techStack: ['Java']
+};
 
 
 

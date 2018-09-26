@@ -47,15 +47,17 @@ export default {
   methods: {
     toggleSummarize() {
       this.doNotWantSummary=!this.doNotWantSummary;
-      this.btnText = this.doNotWantSummary?this.btnText_summary:this.btnText_full;
+      // this.btnText = this.doNotWantSummary?this.btnText_summary:this.btnText_full;
     }
+  },
+  computed: {
+    btnText: () => this.doNotWantSummary?this.btnText_summary:this.btnText_full,
   },
   data() {
     return {
+      doNotWantSummary: false,
       btnText_summary: 'Give me a summary already',
       btnText_full: 'Tell me more',
-      btnText: 'Tell me more',
-      doNotWantSummary: false,
       summaries: [
         'Fitness enthusiast',
         'Software developer',
