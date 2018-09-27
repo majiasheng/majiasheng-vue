@@ -40,6 +40,12 @@ export const itrg = {
   link: '', 
   techStack: ['Java']
 };
+export const jcd = {
+  name: 'JClassDesigner', 
+  id:'jcd',
+  link: '', 
+  techStack: ['Java']
+};
 
 
 

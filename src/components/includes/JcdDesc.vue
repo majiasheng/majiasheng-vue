@@ -1,16 +1,13 @@
 <template>
   <div class="desc">
-    Cap stone course project.
-    
   </div>
 </template>
 <script>
 export default {
-  name: "rgm-desc"
+  name: "jcd-desc"
 };
 </script>
 <style scoped>
-
 </style>
 
 

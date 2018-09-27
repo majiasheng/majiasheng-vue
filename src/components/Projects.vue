@@ -11,22 +11,27 @@
         <twtr-desc></twtr-desc>
         <project-item-bottom :techStack="projects.twtr.techStack"></project-item-bottom>
       </li>
-      <li>
-        <project-item-top></project-item-top>
-        <project-item-bottom></project-item-bottom>
+      <li :id="projects.rgm.id">
+        <project-item-top :projectName="projects.rgm.name"></project-item-top>
+        <rgm-desc></rgm-desc>
+        <project-item-bottom :techStack="projects.rgm.techStack"></project-item-bottom>
       </li>
-      <li>
-        <project-item-top></project-item-top>
-        <project-item-bottom></project-item-bottom>
+      <li :id="projects.fb.id">
+        <project-item-top :projectName="projects.fb.name"></project-item-top>
+        <fb-desc></fb-desc>
+        <project-item-bottom :techStack="projects.fb.techStack"></project-item-bottom>
       </li>
-      <li>
-        <project-item-top></project-item-top>
-        <project-item-bottom></project-item-bottom>
+      <li :id="projects.jcd.id">
+        <project-item-top :projectName="projects.jcd.name"></project-item-top>
+        <jcd-desc></jcd-desc>
+        <project-item-bottom :techStack="projects.jcd.techStack"></project-item-bottom>
       </li>
-      <li>
-        <project-item-top></project-item-top>
-        <project-item-bottom></project-item-bottom>
+      <li :id="projects.lmw.id">
+        <project-item-top :projectName="projects.lmw.name"></project-item-top>
+        <lmw-desc></lmw-desc>
+        <project-item-bottom :techStack="projects.lmw.techStack"></project-item-bottom>
       </li>
+      
     </ul>
   </div>
 </template>
@@ -35,6 +40,10 @@ import ProjectItemTop from '@/components/includes/ProjectItemTop';
 import ProjectItemBottom from '@/components/includes/ProjectItemBottom';
 import TrpDesc from '@/components/includes/TrpDesc';
 import TwtrDesc from '@/components/includes/TwtrDesc';
+import RgmDesc from '@/components/includes/RgmDesc';
+import FbDesc from '@/components/includes/FbDesc';
+import JcdDesc from '@/components/includes/JcdDesc';
+import LmwDesc from '@/components/includes/LmwDesc';
 import * as projects from '../data/projects'
 export default {
   name: 'Projects',
@@ -43,6 +52,10 @@ export default {
     'project-item-bottom': ProjectItemBottom,
     'trp-desc': TrpDesc,
     'twtr-desc': TwtrDesc,
+    'rgm-desc': RgmDesc,
+    'fb-desc': FbDesc,
+    'jcd-desc': JcdDesc,
+    'lmw-desc': LmwDesc,
 
   },
   data() {
