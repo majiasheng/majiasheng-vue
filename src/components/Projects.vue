@@ -44,7 +44,7 @@ import RgmDesc from '@/components/includes/RgmDesc';
 import FbDesc from '@/components/includes/FbDesc';
 import JcdDesc from '@/components/includes/JcdDesc';
 import LmwDesc from '@/components/includes/LmwDesc';
-import * as projects from '../data/projects'
+import * as projects from '../data/projects';
 export default {
   name: 'Projects',
   components: {
@@ -56,7 +56,6 @@ export default {
     'fb-desc': FbDesc,
     'jcd-desc': JcdDesc,
     'lmw-desc': LmwDesc,
-
   },
   data() {
     return {

@@ -9,7 +9,7 @@
 export default {
   name: 'project-item-bottom',
   props: {
-    techStack: []
+    techStack: Array
   }
 }
 </script>
