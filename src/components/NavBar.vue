@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import NavItem from "./NavItem";
+import NavItem from "./includes/NavItem";
 import { navItems } from "../data/NavItems";
 
 export default {
