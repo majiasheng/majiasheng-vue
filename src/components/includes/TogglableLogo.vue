@@ -30,6 +30,7 @@ export default {
   left: 1em;
   display: inline-block;
   cursor: pointer;
+  z-index: 101;
 }
 
 .bar {

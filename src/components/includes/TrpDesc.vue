@@ -2,12 +2,16 @@
   <div class="desc">
     A effort to collect learning topics and present them in a hierachical order 
     (top-down) to give learners an overview of topics.<br/>
-    I like to compare my way of learning a large topic 
+    I like to compare my way of learning a topic/tool, take for instance, Vue.js, 
     to solving a jigsaw puzzle:
     <table>
       <tr>
-        <td>Skim through the contents of the topic</td>
-        <td>Familiarize with the overall picture of the puzzle</td>
+        <th>Learning Vue.js</th>
+        <th>Solving jigsaw puzzle</th>
+      </tr>
+      <tr>
+        <td>Skim through the table of contents and the actual contents to have a basic idea of the topics in Vue.js </td>
+        <td>Take a mental picture of the puzzle, and be mindful of the composition and structures</td>
       </tr>
       <tr>
         <td>Start from section to section (may not follow a strict order)</td>
@@ -26,7 +30,7 @@ export default {
 };
 </script>
 <style scoped>
-td {
+th, td {
   padding-left: 1em;
   padding-top: 1em;
 }

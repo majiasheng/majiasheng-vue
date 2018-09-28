@@ -12,7 +12,7 @@
       <h3>Full Stack Software Developer</h3>
       <h3>Graduated <i>Cum Laude</i> from Stony Brook University in 2018 with a BS in Computer Science</h3>
 
-      <a id="hire-me" href="https://docs.google.com/document/d/1tCIPE5Rk1F90bj1pWMbSZTzjt1gfVFJQetvSwQtdEmA/edit?usp=sharing">∎ Seeking full time opportunities for fall 2018 and onwards.<span class="ui-icon ui-icon-document"></span></a><br>
+      <a id="hire-me" href="https://docs.google.com/document/d/1tCIPE5Rk1F90bj1pWMbSZTzjt1gfVFJQetvSwQtdEmA/edit?usp=sharing" target="_blank">∎ Seeking full time opportunities for fall 2018 and onwards.<span class="ui-icon ui-icon-document"></span></a><br>
       <div>
           <h2>Career Interest</h2>
           <ul class="career-interest">
