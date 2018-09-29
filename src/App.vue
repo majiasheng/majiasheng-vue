@@ -3,7 +3,8 @@
     <body>
       <toggolable-logo></toggolable-logo>
       <div id="wrapper">
-        <nav-bar></nav-bar>
+        <!-- <nav-bar></nav-bar> -->
+        <toggolable-hamburger :navItems="navItems"></toggolable-hamburger>
         <div class="content-container">
           <div class="placeholder"></div>
           <div class="content-wrapper">
@@ -21,13 +22,21 @@
 import NavBar from './components/NavBar';
 import foot from './components/footer';
 import TogglableLogo from '@/components/includes/TogglableLogo';
+import TogglableHamburger from '@/components/includes/TogglableHamburger';
+import { navItems } from "./data/NavItems";
 
 export default {
   name: 'App',
   components: {
     'nav-bar': NavBar,
     'toggolable-logo': TogglableLogo,
+    'toggolable-hamburger': TogglableHamburger,
     foot
+  },
+  data() {
+    return {
+      navItems
+    }
   }
 }
 </script>

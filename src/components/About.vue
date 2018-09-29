@@ -53,9 +53,9 @@ export default {
   data() {
     return {
       doNotWantSummary: false,
-      btnText_summary: '∑', // 'Give me a summary already',
-      btnText_full: '∫',//'Tell me more',
-      btnText: '∫',// 'Tell me more',
+      btnText_summary: '∑',
+      btnText_full: '∫',
+      btnText: '∫',
       summaries: [
         'Fitness enthusiast',
         'Software developer',

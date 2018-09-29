@@ -10,20 +10,13 @@ export default {
 }
 </script>
 <style scoped>
-li:before {
-	content: "»"; /* ⬈↳»‣► */
-  font-size: 58%;
-  padding-right: 1em;
-}
 a:hover {
   background: #36465D;
   color: white;
 }
-
 .nav-item {
   border-radius: 0.2em;
   padding-left: 0.2em;
   padding-right: 0.2em;
 }
-
 </style>

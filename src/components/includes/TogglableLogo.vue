@@ -1,5 +1,5 @@
 <template>
-  <div class="toggolable-logo" @click="toggleChange($event)">
+  <div class="toggolable-logo" @click="toggleChange()" ref="logo">
     <div class="bar1 bar"></div>
     <div class="bar2 bar"></div>
     <div class="bar3 bar"></div>
@@ -17,8 +17,11 @@
 export default {
   name: "toggolable-logo",
   methods: {
-    toggleChange(event) {
-      event.target.classList.toggle("change");
+    toggleChange() {
+      this.$refs.logo.classList.toggle("change");
+      Array.from(this.$refs.logo.children).forEach(child => {
+        child.classList.toggle("change");
+      });
     }
   }
 };
