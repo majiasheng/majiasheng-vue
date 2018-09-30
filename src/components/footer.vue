@@ -26,8 +26,9 @@ export default {
 </script>
 <style scoped>
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 1em;
+  left: 1em;
   /* display: flex;
   justify-content: center;
   align-items: center; */

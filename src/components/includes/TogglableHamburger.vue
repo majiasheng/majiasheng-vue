@@ -6,7 +6,7 @@
       <div class="bar3 bar"></div>
     </div>
     <div class="dropdown-content" :style="{display: display}">
-      <a href="/"><img src="../../../static/logo.png"></a>
+      <!-- <a href="/"><img src="../../../static/logo.png"></a> -->
       <nav-item v-for="(item, index) in navItems" :key="index" :url="item.url">{{ item.name }}</nav-item>
     </div>
   </div>

@@ -1,10 +1,9 @@
 <template>
   <div class="about">
-    <!-- <h1 class="name">Ma, Jia Sheng</h1> -->
+    <h1 class="name">Ma, Jia Sheng</h1>
     <button class="summary-toggle" @click="toggleSummarize">{{ btnText }}</button>
     <div class="summary" :hidden="doNotWantSummary">
-      I like to dabble in different things.
-      <ul>
+      <ul class="about-summary">
         <about-summary v-for="(summary, index) in summaries" :key="index" > {{ summary }} </about-summary>
       </ul>
     </div>
@@ -57,8 +56,8 @@ export default {
       btnText_full: '∫',
       btnText: '∫',
       summaries: [
-        'Fitness enthusiast',
         'Software developer',
+        'Fitness enthusiast',
         'Knowledge lover',
         'Plant lover',
         'Art lover',
@@ -80,6 +79,10 @@ export default {
 }
 </script>
 <style scoped>
+ul.about-summary {
+  padding-left: 0;
+}
+
 .summary-toggle {
   position: absolute;
   top:0;
@@ -87,9 +90,9 @@ export default {
 }
 
 .name {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 6vw;
-  width: 100vw;
+  font-weight: 200;
   text-align: center;
   white-space: nowrap;
   margin: 0;
@@ -103,5 +106,12 @@ a#hire-me:hover {
 }
 .red {
   color: #990000;
+}
+h3 {
+  font-weight: 150;
+}
+
+ul li {
+  margin-bottom:0.5em; 
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>i am different ya i am different</div>
+  <div>x</div>
 </template>
 <script>
 export default {
