@@ -12,6 +12,7 @@ export default new Router({
   hash: false,
   routes:[
     { path: '/', component: Home },
+    { path: '/home', component: Home },
     { path: '/about', component: About },
     { path: '/projects', component: Projects },
     { path: '/resume',

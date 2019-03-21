@@ -14,21 +14,25 @@
       <li :id="projects.rgm.id">
         <project-item-top :projectName="projects.rgm.name" :dateOrStatus="projects.rgm.dateOrStatus"></project-item-top>
         <rgm-desc></rgm-desc>
+        <project-images :images="projects.rgm.images"></project-images>
         <project-item-bottom :techStack="projects.rgm.techStack"></project-item-bottom>
       </li>
       <li :id="projects.fb.id">
         <project-item-top :projectName="projects.fb.name" :dateOrStatus="projects.fb.dateOrStatus"></project-item-top>
         <fb-desc></fb-desc>
+        <project-images :images="projects.fb.images"></project-images>
         <project-item-bottom :techStack="projects.fb.techStack"></project-item-bottom>
       </li>
       <li :id="projects.jcd.id">
         <project-item-top :projectName="projects.jcd.name"  :dateOrStatus="projects.jcd.dateOrStatus"></project-item-top>
         <jcd-desc></jcd-desc>
+        <project-images :images="projects.jcd.images"></project-images>
         <project-item-bottom :techStack="projects.jcd.techStack"></project-item-bottom>
       </li>
       <li :id="projects.lmw.id">
         <project-item-top :projectName="projects.lmw.name"  :dateOrStatus="projects.lmw.dateOrStatus"></project-item-top>
         <lmw-desc></lmw-desc>
+        <project-images :images="projects.lmw.images"></project-images>
         <project-item-bottom :techStack="projects.lmw.techStack"></project-item-bottom>
       </li>
       
@@ -37,6 +41,7 @@
 </template>
 <script>
 import ProjectItemTop from '@/components/includes/ProjectItemTop';
+import ProjectImages from '@/components/includes/ProjectImages';
 import ProjectItemBottom from '@/components/includes/ProjectItemBottom';
 import TrpDesc from '@/components/includes/TrpDesc';
 import TwtrDesc from '@/components/includes/TwtrDesc';
@@ -49,6 +54,7 @@ export default {
   name: 'Projects',
   components: {
     'project-item-top': ProjectItemTop,
+    'project-images': ProjectImages,
     'project-item-bottom': ProjectItemBottom,
     'trp-desc': TrpDesc,
     'twtr-desc': TwtrDesc,

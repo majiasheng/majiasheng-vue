@@ -26,6 +26,8 @@ body {
   display: flex;
   min-height: 85vh;
   flex-direction: column;
+  overflow: hidden;
+
 }
 #wrapper {
   flex: 1;

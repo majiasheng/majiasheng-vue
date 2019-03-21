@@ -1,6 +1,6 @@
 <template>
   <div class="desc">
-    A effort to collect learning topics and present them in a hierachical order 
+    An effort to collect learning topics and present them in a hierachical order 
     (top-down) to give learners an overview of topics.<br/>
     I like to compare my way of learning a topic/tool, take for instance, Vue.js, 
     to solving a jigsaw puzzle:
@@ -21,7 +21,7 @@
         <td>Associate each section with one another</td>
         <td>Join different parts together to form the whole picture</td>
       </tr>
-    </table>
+    </table> 
   </div>
 </template>
 <script>

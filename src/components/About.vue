@@ -8,10 +8,9 @@
       </ul>
     </div>
     <div class="detailed-about" :hidden="!doNotWantSummary">
-      <h3>Full Stack Software Developer</h3>
-      <h3>Graduated <i>Cum Laude</i> from Stony Brook University in 2018 with a BS in Computer Science</h3>
-
-      <a id="hire-me" href="https://docs.google.com/document/d/1tCIPE5Rk1F90bj1pWMbSZTzjt1gfVFJQetvSwQtdEmA/edit?usp=sharing" target="_blank">∎ Seeking full time opportunities for fall 2018 and onwards.<span class="ui-icon ui-icon-document"></span></a><br>
+      No more details, go back to summary  :)
+      <!-- <h3>Software Engineer</h3> -->
+<!--       
       <div>
           <h2>Career Interest</h2>
           <ul class="career-interest">
@@ -24,7 +23,7 @@
           <ul class="interest"> 
             <li v-for="(interest, index) in interests" :key=index v-html="interest"></li>
           </ul>
-      </div>
+      </div> -->
 
       <div>
           <!-- <h2>Facts</h2>
@@ -56,22 +55,23 @@ export default {
       btnText_full: '∫',
       btnText: '∫',
       summaries: [
-        'Software developer',
+        'Software Engineer',
         'Fitness enthusiast',
         'Knowledge lover',
-        'Plant lover',
-        'Art lover',
+        // 'Plant lover',
+        // 'Art lover',
       ],
       contact: {
         email: 'jiasheng.ma@yahoo.com',
       },
-      careerInterests: ['Healthcare IT',
-                        'Help solve existing environmental problems that affects everyday life through software.',
-                        "Build practical software that can improve general populations\' living experience.",
-                        'Other efforts that benefit the longevity and development of our society.'
-                      ],
+      careerInterests: [
+        // 'Healthcare IT',
+        // 'Help solve existing environmental problems that affects everyday life through software.',
+        "Build practical software that can improve general populations\' living experience.",
+        'Other efforts that benefit the longevity and development of our society.'
+      ],
       interests:[
-        'Workout (calisthenics, weight training) <button id="notice" title="Unofficial squat record holder for weight class of 130lb at SBU Rec Center: 300lb (As of May 2018)">!</button>',
+        'Workout ',
         'Care for plants'
       ],
     }
@@ -90,9 +90,10 @@ ul.about-summary {
 }
 
 .name {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 6vw;
-  font-weight: 200;
+  font-weight: 100;
   text-align: center;
   white-space: nowrap;
   margin: 0;

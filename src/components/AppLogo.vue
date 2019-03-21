@@ -1,5 +1,6 @@
 <template>
-  <a id="app-logo" href="/"><img src="../../static/_logo.png"></a>
+  <router-link id="app-logo" to="/"><img src="../../static/_logo.png"></router-link>
+  <!-- <a id="app-logo" href="/"><img src="../../static/_logo.png"></a> -->
 </template>
 
 <script>
