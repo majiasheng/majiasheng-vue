@@ -45,7 +45,6 @@ body {
   width: 20vw;
 }
 .content-wrapper {
-  /* flex-grow: inherit; */
   margin-top:2em;
   flex-grow: 60vw;
 }
