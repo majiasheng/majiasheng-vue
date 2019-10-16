@@ -3,17 +3,22 @@
     <body>
       <!-- <toggolable-logo></toggolable-logo> -->
       <app-logo></app-logo>
-      <div id="wrapper">
-        <!-- <nav-bar></nav-bar> -->
-        <toggolable-hamburger :navItems="navItems"></toggolable-hamburger>
-        <div class="content-container">
-          <div class="placeholder"></div>
-          <div class="content-wrapper">
-            <router-view></router-view>
-          </div>
-          <div class="placeholder"></div>
+      <!-- <nav-bar></nav-bar> -->
+      <toggolable-hamburger :navItems="navItems"></toggolable-hamburger>
+      
+      <div class="content-container">
+        <!-- empty space on the left -->
+        <div class="placeholder"></div>
+
+        <!-- content in the middle -->
+        <div class="content-wrapper">
+          <router-view></router-view>
         </div>
+      
+        <!-- empty space on the right-->
+        <div class="placeholder"></div>
       </div>
+      
       <foot></foot>
     </body>
   </div>

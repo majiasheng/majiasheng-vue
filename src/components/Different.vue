@@ -19,6 +19,9 @@
 <script>
 export default {
   name: 'different-page',
+  mounted() {
+    this.shuffle();
+  },
   data() {
     return {
       numberOfTiles: 9,
@@ -46,7 +49,7 @@ export default {
       this.$refs[cell2][0].className = temp;
       if (this.puzzleIsSolved()) {
         this.$nextTick(()=>{
-          // alert('howdy')
+          alert('howdy')
           // TODO: do something, like unlocking access to the page
         })
       }

@@ -1,6 +1,6 @@
 <template>
   <div class="desc">
-    MS-DOS style game written in MISP assembly.
+    MS-DOS style game written in MISP assembly.<br>
     Gotta keep the lawn well groomed. 🐮
   </div>
 </template>

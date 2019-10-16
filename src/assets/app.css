@@ -5,11 +5,11 @@
   color: #2c3e50;
   margin-left: 20vw;
   margin-right: 20vw;
+  height: 100%;
 }
 .content-container {
   position: relative;
   top: 4.5em;
-  height: 100vh;
   margin-bottom: 3em;
 }
 
@@ -24,21 +24,23 @@ ul {
 
 body {
   display: flex;
-  min-height: 85vh;
+  /* min-height: 85vh; */
   flex-direction: column;
   /* overflow: hidden; */
-
+  /* overflow: scroll; */
+  scrollbar-width: none;
 }
-#wrapper {
-  flex: 1;
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 .horizontal {
   display: inline;
 }
 .content-container {
-  width: inherit;
+  /* width: inherit; */
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 .placeholder {
   /* flex-grow: 2; */

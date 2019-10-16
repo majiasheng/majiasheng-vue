@@ -1,11 +1,11 @@
 <template>
   <div class="projects">
     <ul id="projects-list">
-      <li :id="projects.trp.id">
+      <!-- <li :id="projects.trp.id">
         <project-item-top :projectName="projects.trp.name" :dateOrStatus="projects.trp.dateOrStatus"></project-item-top>
         <trp-desc></trp-desc>
         <project-item-bottom :techStack="projects.trp.techStack"></project-item-bottom>
-      </li>
+      </li> -->
       <li :id="projects.twtr.id">
         <project-item-top :projectName="projects.twtr.name" :dateOrStatus="projects.twtr.dateOrStatus"></project-item-top>
         <twtr-desc></twtr-desc>
