@@ -1,6 +1,6 @@
 <template>
   <div class="desc">
-    First attempt of learning new technologies by working on an actual project, with friends.
+    <!-- First attempt of learning new technologies by working on an actual project, with friends. -->
   </div>
 </template>
 <script>
