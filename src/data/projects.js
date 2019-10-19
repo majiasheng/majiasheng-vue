@@ -1,13 +1,13 @@
 
 export default {
-  trp: {
-    name: 'The Root Project', 
-    id:'trp', 
-    link: '', 
-    techStack: ['NodeJs', 'MySQL'],
-    dateOrStatus: 'On-going (stalling)',
-    desc: 'An effort to collect learning topics and present them in a hierachical order (top-down) to show overviews of topics.'
-  },
+  // trp: {
+  //   name: 'The Root Project', 
+  //   id:'trp', 
+  //   link: '', 
+  //   techStack: ['NodeJs', 'MySQL'],
+  //   dateOrStatus: 'On-going (stalling)',
+  //   desc: 'An effort to collect learning topics and present them in a hierachical order (top-down) to show overviews of topics.'
+  // },
   twtr: {
     name: 'Twitter Clone', 
     id: 'twtr', 
@@ -16,6 +16,15 @@ export default {
     desc: 'Able to withstand over one million read/write requests per hour given limited resources.',
     dateOrStatus: '03/2018 -- 05/2018'
   },
+  trackMe: {
+    name: 'TrackMe', 
+    id: 'trackMe', 
+    link: '', 
+    techStack:  ['Android', 'Java'],
+    thumbNail: '@/../static/images/projects/trackMe/route-traveled.png',
+    desc: 'Android application that can track travel itinerary and provide route predictions.',
+    dateOrStatus: '05/2018',
+  },
   rgm: {
     name: 'Reverse Gerrymandering', 
     id: 'rgm', 
@@ -23,6 +32,7 @@ export default {
     techStack: ['Java', 'SpringMVC', 'MySQL', 'JPA'],
     dateOrStatus: '09/2017 -- 12/2017',
     thumbNail: '@/../static/images/projects/rgm/1.png',
+    desc: 'Gerrymandering is the manipulation of district boundaries to provide political advantage to a party.<br>This tool uses demographic, geospatial and election data and employs various metrics to analyze whether a voting district has been gerrymandered.',
     images: [
       {
         location: '@/../static/images/projects/rgm/1.png',
@@ -42,14 +52,14 @@ export default {
       },
     ]
   },
-  shell: {
-    name: 'Bash Shell', 
-    id:'shell', 
-    link: '', 
-    techStack: ['C'],
-    desc: 'Shell clone',
-    dateOrStatus: '12/2016'
-  },
+  // shell: {
+  //   name: 'Bash Shell', 
+  //   id:'shell', 
+  //   link: '', 
+  //   techStack: ['C'],
+  //   desc: 'Shell clone',
+  //   dateOrStatus: '12/2016'
+  // },
   lmw: {
     name: 'Lawn Mower', 
     id:'lmw', 
@@ -88,14 +98,14 @@ export default {
       }
     ]
   },
-  itrg: {
-    name: 'Interest Groups', 
-    id:'itrg', 
-    link: '', 
-    techStack: ['Java'],
-    desc: 'A multi-threaded CLI forum.',
-    dateOrStatus: '12/2016'
-  },
+  // itrg: {
+  //   name: 'Interest Groups', 
+  //   id:'itrg', 
+  //   link: '', 
+  //   techStack: ['Java'],
+  //   desc: 'A multi-threaded CLI forum.',
+  //   dateOrStatus: '12/2016'
+  // },
   jcd: {
     name: 'JClassDesigner', 
     id:'jcd',

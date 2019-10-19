@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <h1>{{ name }}</h1>
+    <div class='card-header'><h1>{{ name }}</h1></div>
     <img 
       v-if="thumbNail"
       :src="thumbNail"
@@ -8,7 +8,7 @@
       style="width:100%"
     >
     <p class="desc" v-html="desc"></p>
-    <div class="tech-stack" style="margin: 1em 0;">
+    <div class="tech-stack">
       <span v-for="tech in techStack" class="tech" :key="`${name}_${tech}`" href="#"><i>{{ tech }}</i></span> 
     </div>
   </div>
@@ -29,30 +29,28 @@ export default {
 <style scoped>
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 80%;
-  /* min-height: ; */
-  margin: auto;
-  padding: 0.5em;
+  max-width: 400px;
+  margin: 0 0 2em 0;
   text-align: center;
   font-family: arial;
 }
 
 .desc {
   color: grey;
-  font-size: 18px;
+  font-size: 17px;
 }
 
-button {
+button, .card-header {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
+  /* padding: 1px; */
   color: white;
-  background-color: #000;
+  background-color: #2c3e50;
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 a {
@@ -66,7 +64,8 @@ button:hover, a:hover {
 }
 
 .tech-stack {
-  overflow: auto
+  overflow: scroll;
+  font-size: 1em;
 }
 
 .tech-stack > * {

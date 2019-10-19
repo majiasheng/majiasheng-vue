@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <h1 class="name">Ma, Jia Sheng</h1>
+    <h1 class="name">馬 家 聲</h1>
     <button class="summary-toggle" @click="toggleSummarize">{{ btnText }}</button>
     <div class="summary" :hidden="doNotWantSummary">
       <ul class="about-summary">
@@ -62,7 +63,8 @@ ul.about-summary, ul.about-detail {
 .name {
   /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-  font-size: 6vw;
+  font-family: arial;
+  font-size: 4em;
   /* font-weight: 100; */
   text-align: center;
   white-space: nowrap;

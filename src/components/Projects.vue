@@ -25,4 +25,8 @@ export default {
   }
 }
 </script>
-<style src="../assets/projects.css" scoped></style>
+<style scoped>
+.projects > * {
+  margin: 20px 0;
+}
+</style>
